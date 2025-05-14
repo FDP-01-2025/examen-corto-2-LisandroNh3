@@ -3,20 +3,25 @@ using namespace std;
 
 int main()
 {
+    //declaracion de variables
 
     float billetera = 1000;
     int edad, catalogo, compra, c1, c2, c3,c4;
 
+    //preguntando edad
+
     cout << "Bienvenido a tiendas de electronicos, para saber si puede acceder al catalogo porfavor necesito verificar su edad";
     cin >> edad;
 
+
+    //Comprobacion de edad
     if (edad < 15)
     {
         cout << "Lo sentimos pero no posee la edad suficiente para acceder al catalogo" << endl;
     }
     else
     {
-
+//Catalogo
         cout << "Selecciona que catalogo de artefactos quieres ver" << endl;
         cout << "1- Estudiantes" << endl;
         cout << "2- Profesionales" << endl;
@@ -24,6 +29,7 @@ int main()
 
         cin >> catalogo;
 
+        //Switch para compra de articulos del catalogo
         switch (catalogo)
         {
         case 1:
@@ -87,6 +93,8 @@ int main()
                 break;
             }
             break;
+
+            //Caso de segundo catalogo
         case 2:
             cout << "Con 10% de descuento" << endl;
             cout << "1- Laptop Avanzada: $1500" << endl;
@@ -95,6 +103,8 @@ int main()
             cout << "Que articulo comprara?" << endl;
 
             cin >> compra;
+
+            //Proceso de compra segundo catalogo
 
             switch (compra)
             {
@@ -149,6 +159,7 @@ int main()
 
             break;
 
+            //Creacion de catalogo ver todos
         case 3:
             cout << "Con 20% de descuento" << endl;
             cout << "1- Laptop Básica: $900" << endl;
@@ -162,6 +173,7 @@ int main()
 
             cin >> compra;
 
+            //Comprobacion de compra de catalogo todos
             switch (compra)
             {
             case 1:
